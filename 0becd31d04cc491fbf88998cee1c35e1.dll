@@ -1,0 +1,95 @@
+// Decompiled with JetBrains decompiler
+// Type: Subassembly.TTA_SAS_PR_02_BLST_R2022_V05
+// Assembly: 0becd31d04cc491fbf88998cee1c35e1, Version=13.4.1358.0, Culture=neutral, PublicKeyToken=null
+// MVID: 54066DF7-67C0-4976-8001-A49ED035B484
+// Assembly location: C:\Users\erli98948\AppData\Local\Temp\Zajemek\839490f1b4\0becd31d04cc491fbf88998cee1c35e1.dll
+
+using Microsoft.CSharp;
+using System;
+using System.CodeDom.Compiler;
+using System.IO;
+using System.Reflection;
+using System.Windows.Forms;
+
+namespace Subassembly
+{
+  internal class TTA_SAS_PR_02_BLST_R2022_V05
+  {
+    private static object _subassemblyProxy = (object) null;
+    private static MethodInfo _DrawMethod = (MethodInfo) null;
+    private static MethodInfo _GetLogicalNamesMethod = (MethodInfo) null;
+    private static MethodInfo _GetInputParametersMethod = (MethodInfo) null;
+    private static MethodInfo _GetOutputParametersMethod = (MethodInfo) null;
+
+    static TTA_SAS_PR_02_BLST_R2022_V05()
+    {
+      string str = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "0becd31d04cc491fbf88998cee1c35e1_Proxy.dll");
+      string path = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "ProxyDllTemplate.tpl");
+      bool flag = false;
+      if (!File.Exists(str))
+      {
+        flag = true;
+      }
+      else
+      {
+        if (!File.Exists(path))
+          return;
+        if (File.GetLastWriteTime(str) < File.GetLastWriteTime(path))
+          flag = true;
+      }
+      if (flag)
+      {
+        string sourceCodes = File.ReadAllText(path).Replace("%SubassemblyClassName_Proxy%", nameof (TTA_SAS_PR_02_BLST_R2022_V05)).Replace("%XamlFileName_Proxy%", "0becd31d04cc491fbf88998cee1c35e1").Replace("%Version_Proxy%", "13.4.1358.0");
+        string[] assembliesReferenced = new string[3]
+        {
+          "System.Windows.Forms.dll",
+          "Microsoft.CSharp.dll",
+          "System.dll"
+        };
+        if (File.Exists(str))
+          File.Delete(str);
+        TTA_SAS_PR_02_BLST_R2022_V05.CompileCodes(sourceCodes, assembliesReferenced, str);
+      }
+      TTA_SAS_PR_02_BLST_R2022_V05.InitializeMethods(str);
+    }
+
+    private static void InitializeMethods(string dllFile)
+    {
+      try
+      {
+        Type type = Assembly.LoadFrom(dllFile).GetType("Autodesk.SubassemblyComposer.CivilRuntime.TTA_SAS_PR_02_BLST_R2022_V05", true);
+        TTA_SAS_PR_02_BLST_R2022_V05._DrawMethod = type.GetMethod("Draw");
+        TTA_SAS_PR_02_BLST_R2022_V05._GetLogicalNamesMethod = type.GetMethod("GetLogicalNames");
+        TTA_SAS_PR_02_BLST_R2022_V05._GetInputParametersMethod = type.GetMethod("GetInputParameters");
+        TTA_SAS_PR_02_BLST_R2022_V05._GetOutputParametersMethod = type.GetMethod("GetOutputParameters");
+        TTA_SAS_PR_02_BLST_R2022_V05._subassemblyProxy = Activator.CreateInstance(type);
+      }
+      catch (Exception ex)
+      {
+      }
+    }
+
+    private static void CompileCodes(
+      string sourceCodes,
+      string[] assembliesReferenced,
+      string outputDLLPath)
+    {
+      CompilerParameters options = new CompilerParameters(assembliesReferenced, outputDLLPath, true);
+      options.GenerateExecutable = false;
+      using (CSharpCodeProvider csharpCodeProvider = new CSharpCodeProvider())
+      {
+        CompilerResults compilerResults = csharpCodeProvider.CompileAssemblyFromSource(options, sourceCodes);
+        if (compilerResults.Errors.HasErrors)
+          throw new ApplicationException("Failed to compile assembly from source!" + compilerResults.Errors.ToString());
+      }
+    }
+
+    public void Draw() => TTA_SAS_PR_02_BLST_R2022_V05._DrawMethod.Invoke(TTA_SAS_PR_02_BLST_R2022_V05._subassemblyProxy, (object[]) null);
+
+    public void GetLogicalNames() => TTA_SAS_PR_02_BLST_R2022_V05._GetLogicalNamesMethod.Invoke(TTA_SAS_PR_02_BLST_R2022_V05._subassemblyProxy, (object[]) null);
+
+    public void GetOutputParameters() => TTA_SAS_PR_02_BLST_R2022_V05._GetOutputParametersMethod.Invoke(TTA_SAS_PR_02_BLST_R2022_V05._subassemblyProxy, (object[]) null);
+
+    public void GetInputParameters() => TTA_SAS_PR_02_BLST_R2022_V05._GetInputParametersMethod.Invoke(TTA_SAS_PR_02_BLST_R2022_V05._subassemblyProxy, (object[]) null);
+  }
+}
