@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<EnumData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EnumDatas>
+    <Groups />
+    <DefinedVariables>
+      <string>CpToTOR</string>
+      <string>DeltaCant</string>
+      <string>SubassemblyNotes</string>
+    </DefinedVariables>
+  </EnumDatas>
+</EnumData>
