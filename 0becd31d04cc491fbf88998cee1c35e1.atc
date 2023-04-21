@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<Category xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ItemID idValue="{934b018e-fda5-45a8-bae9-da3bddbf3ea6}" />
+  <Properties>
+    <ItemName>Category1</ItemName>
+    <Images>
+      <Image cx="93" cy="123" />
+    </Images>
+  </Properties>
+  <CustomData />
+  <Source />
+  <Palettes />
+  <Packages />
+  <Tools>
+    <Tool Name="TTA_SAS_PR_02_BLST_R2022_V05">
+      <ItemID idValue="{81c4b427-b2a9-42eb-8def-f2228bfe3f16}" />
+      <Properties>
+        <ItemName>TTA_SAS_PR_02_BLST_R2022_V05</ItemName>
+        <Images>
+          <Image cx="64" cy="64" />
+        </Images>
+        <Description>Ballast with Cant Functionality</Description>
+        <Help>
+          <HelpFile />
+          <HelpCommand />
+          <HelpData />
+        </Help>
+      </Properties>
+      <Source />
+      <StockToolRef idValue="{7F55AAC0-0256-48D7-BFA5-914702663FDE}" />
+      <Data>
+        <AeccDbSubassembly>
+          <GeometryGenerateMode>UseDotNet</GeometryGenerateMode>
+          <DotNetClass Assembly="0becd31d04cc491fbf88998cee1c35e1.dll">Subassembly.TTA_SAS_PR_02_BLST_R2022_V05</DotNetClass>
+          <Params>
+            <Side DataType="long" TypeInfo="16" DisplayName="Side" Description="Side">0<Enum><Left DisplayName="Left">1</Left><Right DisplayName="Right">0</Right></Enum></Side>
+            <TrackGauge DataType="double" TypeInfo="16" DisplayName="Track Gauge" Description="Rail Gauge distance">1.435</TrackGauge>
+            <RailHeadWidth DataType="double" TypeInfo="16" DisplayName="Rail Head Width" Description="Width of Rail Head">0.068</RailHeadWidth>
+            <RailHeight DataType="double" TypeInfo="16" DisplayName="Rail Depth" Description="Depth of Rail">0.172</RailHeight>
+            <RailPadThickness DataType="double" TypeInfo="16" DisplayName="Rail Pad Thickness" Description="Thickness of Rail Pad">0.03</RailPadThickness>
+            <TieDepth DataType="double" TypeInfo="16" DisplayName="Tie Depth" Description="Depth of Tie">0.178</TieDepth>
+            <TieLength DataType="double" TypeInfo="16" DisplayName="Tie Length" Description="Length of Tie">2.589</TieLength>
+            <BallastDepth DataType="double" TypeInfo="16" DisplayName="Ballast Depth" Description="Depth of Ballast">0.305</BallastDepth>
+            <BallastShoulderWidth DataType="double" TypeInfo="16" DisplayName="Ballast Shoulder Width" Description="Width of Ballast Shoulder">0.3</BallastShoulderWidth>
+            <BallastShoulderSlope DataType="double" TypeInfo="10" DisplayName="Ballast Shoulder Slope" Description="Slope of Ballast Shoulder">0.5</BallastShoulderSlope>
+            <SubballastGrade DataType="double" TypeInfo="9" DisplayName="Subballast Grade" Description="Subballast Grade">0.03</SubballastGrade>
+            <SubballastDepth DataType="double" TypeInfo="16" DisplayName="Subballast Depth" Description="Depth of Subballast">0.305</SubballastDepth>
+            <SubballastShoulderWidth DataType="double" TypeInfo="16" DisplayName="Subballast Shoulder Width" Description="Width of Subballast Shoulder">0.305</SubballastShoulderWidth>
+            <SubballastPropGradeRight DataType="double" TypeInfo="9" DisplayName="Subballast Proposed Grade (Right)" Description="For Proposed Ballast Only">0.03</SubballastPropGradeRight>
+            <SubballastExGradeRight DataType="double" TypeInfo="9" DisplayName="Subballast Existing Grade (Right)" Description="Subballast Existing Grade (Right)">0.03</SubballastExGradeRight>
+            <SubballastExGradeLeft DataType="double" TypeInfo="9" DisplayName="Subballast Existing Grade (Left)" Description="Subballast Existing Grade (Left)">0.03</SubballastExGradeLeft>
+            <EX_TRK_ELEV_Threshold DataType="double" TypeInfo="16" DisplayName="Existing Track Elevation Threshold" Description="Existing Track Elevation Threshold">0.2</EX_TRK_ELEV_Threshold>
+            <EX_SB_TOP DataType="double" TypeInfo="16" DisplayName="Top of Existing Subballast" Description="Top of Existing Subballast">0.683</EX_SB_TOP>
+            <MinLinkLength DataType="double" TypeInfo="16" DisplayName="Minimum Link Length (Solids Creation)" Description="For Creation of Solids">0.01</MinLinkLength>
+            <TopSubballastWidthTangent DataType="double" TypeInfo="16" DisplayName="Subballast Top Shoulder Width (Tangent)" Description="Width of Subballast Top (Tangent) ">3.51</TopSubballastWidthTangent>
+            <TopSubballastWidth3050 DataType="double" TypeInfo="16" DisplayName="Subballast Top Shoulder Width (30-50mm Cant)" Description="Width of Subballast Top (30-50mm Cant)">3.67</TopSubballastWidth3050>
+            <TopSubballastWidth50100 DataType="double" TypeInfo="16" DisplayName="Subballast Top Shoulder Width (50-100mm Cant)" Description="Width of Subballast Top (50-100mm Cant)">3.97</TopSubballastWidth50100>
+            <TopSubballastWidth100150 DataType="double" TypeInfo="16" DisplayName="Subballast Top Shoulder Width (100-150mm Cant)" Description="Width of Subballast Top (100-150mm Cant)">4.12</TopSubballastWidth100150>
+          </Params>
+        </AeccDbSubassembly>
+        <Units>m</Units>
+      </Data>
+    </Tool>
+  </Tools>
+  <StockTools />
+</Category>
